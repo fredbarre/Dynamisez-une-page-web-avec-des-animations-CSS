@@ -32,13 +32,13 @@
   font-weight: bold;
 }
 
-.button-fonction {
+.fonction-bloc {
   /*width: 430px;
   height: 100px;*/
   /*margin-top: 13px;
   margin-bottom: 13px;*/
 }
-.button-fonction__container {
+.fonction-bloc__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@
   /*width: 430px;
   height: 100px;*/
 }
-.button-fonction__number {
+.fonction-bloc__number {
   background-color: #9356dc;
   border-radius: 80px 80px 80px 80px;
   color: white;
@@ -61,7 +61,7 @@
   position: relative;
   left: 15px;
 }
-.button-fonction__span {
+.fonction-bloc__span {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -73,14 +73,14 @@
   width: 430px;
   height: 100px;
 }
-.button-fonction__text {
+.fonction-bloc__text {
   padding-right: 50px;
   font-size: 125%;
   font-weight: bold;
   /*margin-right: 20px;
   margin-left: 20px;*/
 }
-.button-fonction__icon {
+.fonction-bloc__icon {
   margin-right: 40px;
   margin-left: 40px;
 }
