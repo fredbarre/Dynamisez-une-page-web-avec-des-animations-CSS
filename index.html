@@ -7,7 +7,7 @@
     <title>ohmyfood</title>
     <meta name="description" content="Page de reservation des restaurants">
     <meta name="keywords" content="ohmyfood restaurants reservation">
-    <!--<link rel="stylesheet" href="./public/css/normalize.css" />-->
+    <link rel="stylesheet" href="./public/css/normalize.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
     
     <script src="https://kit.fontawesome.com/fed78bb2e8.js" crossorigin="anonymous"></script>
@@ -21,7 +21,7 @@
     
     <div class="locationBlock">
         <div class="locationContainer"> 
-            <i class="fa-solid fa-location-pin locationIcon"></i>
+            <i class="fa-solid fa-location-dot locationIcon"></i>
             Paris, Belleville
         </div>
     </div>
@@ -29,37 +29,41 @@
     <section>
         <h2 class="">Réserver le menu qui vous convient</h2>
         <h3>Découvrer des restaurants d'exception sélectionnés par nos soins</h3>
-        <bouton>Explorer nos restaurants</bouton>
+        <bouton class="button-purple">
+            <span class="button-purple__span">
+                <span class="button-purple__text">Explorer nos restaurants</span>
+            </span>
+        </bouton>
     </section>
 
     <section>
         <h2>Fonctionnement</h2>
-        <div>
-            <span>1</span>
-            <bouton>
-                <span>
-                    <i class="fa-solid fa-mobile-screen"></i>
-                    Choisissez un restaurant
+        <div class="button-fonction__container">
+            <span class="button-fonction__number">1</span>
+            <bouton class="button-fonction">
+                <span class="button-fonction__span">
+                    <i class="fa-solid fa-mobile-screen button-fonction__icon"></i>
+                    <span class="button-fonction__text">Choisissez un restaurant</span>
                 </span>
             </bouton>
         </div>
 
-        <div>
-            <span>2</span>
-            <bouton>
-                <span>
-                    <i class="fa-solid fa-list"></i>
-                    Composer votre menu
+        <div class="button-fonction__container">
+            <span class="button-fonction__number">2</span>
+            <bouton class="button-fonction">
+                <span class="button-fonction__span">
+                    <i class="fa-solid fa-list button-fonction__icon"></i>
+                    <span class="button-fonction__text">Composer votre menu</span>
                 </span>
             </bouton>
         </div>
 
-        <div>
-            <span>3</span>
-            <bouton>
-                <span>
-                    <i class="fa-solid fa-shop"></i>
-                    Déguster au restaurant
+        <div class="button-fonction__container">
+            <span class="button-fonction__number">3</span>
+            <bouton class="button-fonction">
+                <span class="button-fonction__span">
+                    <i class="fa-solid fa-shop button-fonction__icon"></i>
+                    <span class="button-fonction__text">Déguster au restaurant</span>
                 </span>
             </bouton>
         </div>
