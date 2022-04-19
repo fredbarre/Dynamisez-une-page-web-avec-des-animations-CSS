@@ -27,3 +27,134 @@
         font-weight: bold;
     }
 }
+
+.menu-bloc{
+    display: flex;
+    width: 350px;
+    height: 65px;
+    justify-content: space-between;
+    border-radius: 15px 15px 15px 15px;
+
+    &__text-bloc{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 330px;
+
+    }
+
+    &__second-row{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        transition: all 2s;
+
+    }
+
+    &__price{
+        padding-right: 20px;
+    }
+
+
+    &__togglable{
+        display: none;
+    }
+
+    &__toggle{
+        display: none;
+        
+    }
+
+    
+    
+    
+}
+
+
+.menu-bloc:hover{
+
+    
+    .menu-bloc__toggle {
+    background-color: aquamarine;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 00px 15px 15px 0px;
+    animation-name: box-open;
+    animation-duration: 200ms;
+    }
+
+    @keyframes box-open {
+        0% {
+            width: 0px;
+        }
+    
+        25% {
+            width: 15px;
+        }
+    
+        50% {
+            width: 30px;
+        }
+
+        75%{
+            width: 45px;
+        }
+    
+        100% {
+            width: 60px;
+        }
+    }
+
+    .menu-bloc__box {
+    background-color: white;
+    border-radius: 80px 80px 80px 80px;
+    margin-left: 22px;
+    padding-left: 2px;
+    padding-right: 2px;
+    /*padding-top: 2px;
+        padding-bottom: 2px;*/
+    }
+   
+
+    .menu-bloc__icon {
+        font-size: 80%;
+        color: #99e2d0ff;
+        transform: rotate(1080deg);
+    }
+        
+   
+/*
+    @keyframes check-rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+    
+        25% {
+            transform: rotate(90deg);
+        }
+    
+        50% {
+            transform: rotate(90deg);
+        }
+    
+        75% {
+            transform: rotate(135deg);
+        }
+    
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+*/
+    .menu-bloc__text-bloc {
+    width: 290px;
+    }
+}
+
