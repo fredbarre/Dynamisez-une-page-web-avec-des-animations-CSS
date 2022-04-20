@@ -22,6 +22,10 @@
   font-weight: bold;
 }
 
+h2 {
+  font-size: 25px;
+}
+
 .background-gray {
   background-color: #f6f6f6;
 }
@@ -32,6 +36,14 @@
 
 .background-white {
   background-color: white;
+}
+
+.color-purple {
+  color: #9356dc;
+}
+
+span.background-lightpurple {
+  background-color: #f5edff;
 }
 
 .button-purple {
@@ -211,6 +223,10 @@
   margin-right: 40px;
   margin-left: 40px;
 }
+.fonction-bloc__title {
+  margin-right: 20px;
+  margin-left: 20px;
+}
 
 .location {
   background-image: linear-gradient(180deg, #d2d2d2 0%, #dedede 10%, #eaeaea 75%);
@@ -222,6 +238,17 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.intro__text1 {
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+}
+.intro__text2 {
+  margin-left: 35px;
+  margin-right: 35px;
+  text-align: center;
+}
+
 .header-image {
   width: 175px;
   height: auto;
