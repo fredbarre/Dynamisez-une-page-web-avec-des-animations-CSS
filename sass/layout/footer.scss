@@ -1,0 +1,38 @@
+.footer{
+    background-color: #353535ff;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    &__container{
+        width: 380px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+
+    }
+    &__image{
+        width: 110px;
+        height: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        filter: invert(100%);
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+
+    &__bloc{
+        filter: invert(100%);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    &__icon{
+        padding-right: 15px;
+    }
+
+
+}

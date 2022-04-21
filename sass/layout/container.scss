@@ -84,10 +84,17 @@
 
 .intro{
 
+    height: 285px;
+
     &__text1{
 
         margin-left: 60px;
         margin-right: 60px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+        padding-top: 30px;
+        /*padding-bottom: 10px;*/
         text-align: center;
     }
 
@@ -97,3 +104,100 @@
         text-align: center;
     }
 }
+
+.restaurant{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    &__image{
+        width: 336px;
+        height: 175px;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    &__bottom{
+        width: 336px;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 0px 0px 20px 20px;
+    }
+    
+
+    &__icon-empty,&__icon-full{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    &__icon-full{
+        color:purple;
+    }
+
+    &__icon-full__div {
+        display: none;
+    }
+/*
+    &__icon-empty__div {
+        display: none;
+    }*/
+
+    &__textDiv{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    &__text{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    &__new{
+        display: flex;
+        background-color: #99e2d0ff;
+        color: #3baa8fff;
+        width: 62px;
+        height: 28px;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        top: 40px;
+        left: 260px;
+        font-size: 80%;
+    }
+
+    &__title{
+        padding-top: 15px;
+        
+        
+    }
+
+    &__title-div{
+        width: 330px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__section{
+        padding-bottom: 60px;
+    }
+
+}
+
+.restaurant__icon-hover:hover{
+    .restaurant__icon-empty__div{
+        display: none;
+    }
+    .restaurant__icon-full__div{
+        display: inline;
+    }
+}
+

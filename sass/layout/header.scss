@@ -1,6 +1,19 @@
-.header-image{
-    width: 175px;
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+.header{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    gap: 50px;
+    &__icon{
+        font-size: 125%;
+    }
+
+    &-image{
+        width: 175px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
