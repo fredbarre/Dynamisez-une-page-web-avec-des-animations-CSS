@@ -360,6 +360,12 @@ a:visited {
   display: inline;
 }
 
+.background__image {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
 .header {
   display: flex;
   justify-content: flex-start;
