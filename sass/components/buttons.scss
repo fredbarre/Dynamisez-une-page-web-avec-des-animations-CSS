@@ -1,160 +1,31 @@
-.button-purple{
-    display: flex;
-    justify-content: center;
-    
-   
+.button-purple {
+  display: flex;
+  justify-content: center;
 
-    &__span{
-        background-color: purple;
-        background-image: linear-gradient(140deg, #D46BDB 0%, #E972DA 50%, #D06ADB 75%);
-        
-        border-radius: 40px 40px 40px 40px;
-        /*padding-top: 20px;
+  &__span {
+    background-color: purple;
+    min-width: 187px;
+    background-image: linear-gradient(
+      140deg,
+      #d46bdb 0%,
+      #e972da 50%,
+      #d06adb 75%
+    );
+
+    border-radius: 40px 40px 40px 40px;
+    /*padding-top: 20px;
         padding-bottom: 20px;*/
-        display:flex;
-        height: 66px;
-        
-    }
-
-
-    &__text{
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: white;
-        font-size: 125%;
-        font-weight: bold;
-    }
-}
-
-.menu-bloc{
     display: flex;
-    width: 350px;
-    height: 65px;
-    justify-content: space-between;
-    border-radius: 15px 15px 15px 15px;
+    height: 66px;
+  }
 
-    &__text-bloc{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        width: 330px;
-
-    }
-
-    &__second-row{
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    &__icon {
-        display: flex;
-        align-items: center;
-        transition: all 2s;
-
-    }
-
-    &__price{
-        padding-right: 20px;
-    }
-
-
-    &__togglable{
-        display: none;
-    }
-
-    &__toggle{
-        display: none;
-        
-    }
-
-    
-    
-    
+  &__text {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 125%;
+    font-weight: bold;
+  }
 }
-
-
-.menu-bloc:hover{
-
-    
-    .menu-bloc__toggle {
-    background-color: aquamarine;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 00px 15px 15px 0px;
-    animation-name: box-open;
-    animation-duration: 200ms;
-    }
-
-    @keyframes box-open {
-        0% {
-            width: 0px;
-        }
-    
-        25% {
-            width: 15px;
-        }
-    
-        50% {
-            width: 30px;
-        }
-
-        75%{
-            width: 45px;
-        }
-    
-        100% {
-            width: 60px;
-        }
-    }
-
-    .menu-bloc__box {
-    background-color: white;
-    border-radius: 80px 80px 80px 80px;
-    margin-left: 22px;
-    padding-left: 2px;
-    padding-right: 2px;
-    /*padding-top: 2px;
-        padding-bottom: 2px;*/
-    }
-   
-
-    .menu-bloc__icon {
-        font-size: 80%;
-        color: #99e2d0ff;
-        transform: rotate(1080deg);
-    }
-        
-   
-/*
-    @keyframes check-rotate {
-        0% {
-            transform: rotate(0deg);
-        }
-    
-        25% {
-            transform: rotate(90deg);
-        }
-    
-        50% {
-            transform: rotate(90deg);
-        }
-    
-        75% {
-            transform: rotate(135deg);
-        }
-    
-        100% {
-            transform: rotate(180deg);
-        }
-    }
-*/
-    .menu-bloc__text-bloc {
-    width: 290px;
-    }
-}
-

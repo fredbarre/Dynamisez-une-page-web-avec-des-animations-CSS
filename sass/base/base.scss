@@ -1,32 +1,28 @@
-
 /*Snippet pour les préfixes de box-sizing*/
 .box {
-    box-sizing: border-box;
-    /* Opera/IE 8+ */
-    -moz-box-sizing: border-box;
-    /* Firefox, autres Gecko */
-    -webkit-box-sizing: border-box;
-    /* Safari/Chrome, autres WebKit */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  -moz-box-sizing: border-box;
+  /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, autres WebKit */
 }
 
-.center{
-    display: flex;
-    justify-content: center;
-    
-    
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 .center__title-div {
-    width: 435px;
-    display: flex;
-    justify-content: flex-start;
-    
+  width: 330px;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.padding-top{
-    padding-top: 28px;
+.padding-top {
+  padding-top: 28px;
 }
 
-.padding-left{
-    padding-left: 30px;
+.padding-left {
+  padding-left: 30px;
 }

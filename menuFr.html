@@ -1,45 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ohmyfood</title>
-    <meta name="description" content="Page de reservation des restaurants">
-    <meta name="keywords" content="ohmyfood restaurants reservation">
+    <meta name="description" content="Page de reservation des restaurants" />
+    <meta name="keywords" content="ohmyfood restaurants reservation" />
     <link rel="stylesheet" href="./public/css/normalize.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
 
-    <script src="https://kit.fontawesome.com/fed78bb2e8.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/fed78bb2e8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header class="center">
-        <div class="header">
-            <i class="fa-solid fa-arrow-left header__icon"></i>
-            <img src=".\images\logo\ohmyfood.png" alt="image de ohmyfood" class="header-image">
-        </div>
+      <div class="header">
+        <i class="fa-solid fa-arrow-left header__icon"></i>
+        <img
+          src=".\images\logo\ohmyfood.png"
+          alt="image de ohmyfood"
+          class="header-image"
+        />
+      </div>
     </header>
 
     <div class="background center">
-        <img src=".\images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image de ohmyfood" class="background__image">
-        <!--background image-->
+      <img
+        src=".\images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        alt="image de ohmyfood"
+        class="background__image"
+      />
+      <!--background image-->
     </div>
 
-    <section class="background-gray">
-        <div>
-            <div>À la française</div>
-            <i class="fa-thin fa-heart"></i>
+    <section class="center">
+      <div class="background-gray menu__container">
+        <div class="menu__title">
+          <div class="menu__title__text">À la française</div>
+          <i class="fa-regular fa-heart menu__title__icon"></i>
         </div>
 
         <div>
-            <div>ENTREES</div>
-            <div> <!--green bar-->
-            </div>
-            <div class="menu-bloc background-white">
+          <div class="menu__type">ENTREES</div>
+          <div class="menu__bar"><!--green bar--></div>
+          <div class="menu-bloc background-white">
             <div class="menu-bloc__text-bloc">
-                <div class="menu-bloc__name bold">Tartare de poulpe acidulé</div>
-                <div class="menu-bloc__second-row"><div class="menu-bloc__note">Aux zests d'orange</div> <div class="menu-bloc__price">25€</div></div>
+              <div class="menu-bloc__name bold">Tartare de poulpe acidulé</div>
+              <div class="menu-bloc__second-row">
+                <div class="menu-bloc__note">Aux zests d'orange</div>
+                <div class="menu-bloc__price">25€</div>
+              </div>
+            </div>
+            <label class="menu-bloc__toggle menu-bloc__active">
+              <input
+                name="menu choice"
+                type="checkbox"
+                class="menu-bloc__togglable"
+              />
+              <div class="menu-bloc__box">
+                <i class="fa-solid fa-check menu-bloc__icon"></i>
+              </div>
+            </label>
+          </div>
+
+        <div class="menu-bloc background-white">
+            <div class="menu-bloc__text-bloc">
+                <div class="menu-bloc__name bold">Velouté de légumes d'antan</div>
+                <div class="menu-bloc__second-row">
+                    <div class="menu-bloc__note">Carrotte, panais, topinambour</div>
+                    <div class="menu-bloc__price">35€</div>
+                </div>
             </div>
             <label class="menu-bloc__toggle">
                 <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
@@ -47,149 +80,154 @@
                     <i class="fa-solid fa-check menu-bloc__icon"></i>
                 </div>
             </label>
-
-            </div>
-
-
-            <div>
-            <div>
-                <div>Velouté de légumes d'antan</div>
-                <div>
-                    <div>Carrotte, panais, topinambour</div>
-                    <div>35€</div>
-                </div>
-            </div>
-            <div>
-                <!--OK animation-->
-            </div>
-            </div>
-
-            <div>
-            <div>
-                <div>Soupe à l'oignon</div>
-                <div>
-                    <div>Revisitée</div>
-                    <div>20€</div>
-                </div>
-            </div>
-            <div>
-                <!--OK animation-->
-            </div>
-            </div>
-
-
-            <div>PLATS</div>
-            <div>
-                <!--green bar-->
-            </div>
-            <div>
-                <div>
-                    <div>Coquilles Saint-Jacques</div>
-                    <div>
-                        <div>Accompagnées d'une purée de panais</div>
-                        <div>40€</div>
-                    </div>
-                </div>
-                <div>
-                    <!--OK animation-->
-                </div>
-            </div>
-            
-            
-            <div>
-                <div>
-                    <div>Magret de canard</div>
-                    <div>
-                        <div>Et parmentier de pommes de terres</div>
-                        <div>35€</div>
-                    </div>
-                </div>
-                <div>
-                    <!--OK animation-->
-                </div>
-            </div>
-            
-            <div>
-                <div>
-                    <div>Pigenneau d'Illes-et-Vilaine</div>
-                    <div>
-                        <div>Sur son lit de gnocchis aux légumes</div>
-                        <div>44€</div>
-                    </div>
-                </div>
-                <div>
-                    <!--OK animation-->
-                </div>
-            </div>
-
-
-            <div>DESSERTS</div>
-            <div>
-                <!--green bar-->
-            </div>
-            <div>
-                <div>
-                    <div>Pétales de violettes glacés</div>
-                    <div>
-                        <div>Et purée de noisettes</div>
-                        <div>18€</div>
-                    </div>
-                </div>
-                <div>
-                    <!--OK animation-->
-                </div>
-            </div>
-            
-            
-            <div>
-                <div>
-                    <div>Fondant au chocolat</div>
-                    <div>
-                        <div>Revisité</div>
-                        <div>22€</div>
-                    </div>
-                </div>
-                <div>
-                    <!--OK animation-->
-                </div>
-            </div>
-            
-            <div>
-                <div>
-                    <div>Millefeuille croustillant</div>
-                    <div>
-                        <div>Myrtilles et pâtes d'amande</div>
-                        <div>23€</div>
-                    </div>
-                </div>
-                <div>
-                    <!--OK animation-->
-                </div>
-            </div>
-
-            
-            
         </div>
+
+        <div class="menu-bloc background-white">
+            <div class="menu-bloc__text-bloc">
+                <div class="menu-bloc__name bold">Soupe à l'oignon</div>
+                <div class="menu-bloc__second-row">
+                    <div class="menu-bloc__note">Revisitée</div>
+                    <div class="menu-bloc__price">20€</div>
+                </div>
+            </div>
+            <label class="menu-bloc__toggle">
+                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                <div class="menu-bloc__box">
+                    <i class="fa-solid fa-check menu-bloc__icon"></i>
+                </div>
+            </label>
+        </div>
+
+
+        <div class="menu__type">PLATS</div>
+        <div class="menu__bar">
+            <!--green bar-->
+        </div>
+        <div class="menu-bloc background-white">
+            <div class="menu-bloc__text-bloc">
+                <div class="menu-bloc__name bold">Coquilles Saint-Jacques</div>
+                <div class="menu-bloc__second-row">
+                    <div class="menu-bloc__note">Accompagnées d'une purée de panais</div>
+                    <div class="menu-bloc__price">40€</div>
+                </div>
+            </div>
+            <label class="menu-bloc__toggle">
+                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                <div class="menu-bloc__box">
+                    <i class="fa-solid fa-check menu-bloc__icon"></i>
+                </div>
+            </label>
+        </div>
+        
+        <div class="menu-bloc background-white">
+            <div class="menu-bloc__text-bloc">
+                <div class="menu-bloc__name bold">Magret de canard</div>
+                <div class="menu-bloc__second-row">
+                    <div class="menu-bloc__note">Et parmentier de pommes de terres</div>
+                    <div class="menu-bloc__price">35€</div>
+                </div>
+            </div>
+            <label class="menu-bloc__toggle">
+                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                <div class="menu-bloc__box">
+                    <i class="fa-solid fa-check menu-bloc__icon"></i>
+                </div>
+            </label>
+        </div>
+        
+        <div class="menu-bloc background-white">
+            <div class="menu-bloc__text-bloc">
+                <div class="menu-bloc__name bold">Pigenneau d'Illes-et-Vilaine</div>
+                <div class="menu-bloc__second-row">
+                    <div class="menu-bloc__note">Sur son lit de gnocchis aux légumes</div>
+                    <div class="menu-bloc__price">44€</div>
+                </div>
+            </div>
+            <label class="menu-bloc__toggle">
+                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                <div class="menu-bloc__box">
+                    <i class="fa-solid fa-check menu-bloc__icon"></i>
+                </div>
+            </label>
+        </div>
+
+
+        <div class="menu__type">DESSERTS</div>
+        <div class="menu__bar">
+            <!--green bar-->
+        </div>
+        <div class="menu-bloc background-white">
+            <div class="menu-bloc__text-bloc">
+                <div class="menu-bloc__name bold">Pétales de violettes glacés</div>
+                <div class="menu-bloc__second-row">
+                    <div class="menu-bloc__note">Et purée de noisettes</div>
+                    <div class="menu-bloc__price">18€</div>
+                </div>
+            </div>
+            <label class="menu-bloc__toggle">
+                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                <div class="menu-bloc__box">
+                    <i class="fa-solid fa-check menu-bloc__icon"></i>
+                </div>
+            </label>
+        </div>
+        
+        <div class="menu-bloc background-white">
+            <div class="menu-bloc__text-bloc">
+                <div class="menu-bloc__name bold">Fondant au chocolat</div>
+                <div class="menu-bloc__second-row">
+                    <div class="menu-bloc__note">Revisité</div>
+                    <div class="menu-bloc__price">22€</div>
+                </div>
+            </div>
+            <label class="menu-bloc__toggle">
+                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                <div class="menu-bloc__box">
+                    <i class="fa-solid fa-check menu-bloc__icon"></i>
+                </div>
+            </label>
+        </div>
+        
+        <div class="menu-bloc background-white">
+            <div class="menu-bloc__text-bloc">
+                <div class="menu-bloc__name bold">Millefeuille croustillant</div>
+                <div class="menu-bloc__second-row">
+                    <div class="menu-bloc__note">Myrtilles et pâtes d'amande</div>
+                    <div class="menu-bloc__price">23€</div>
+                </div>
+            </div>
+            <label class="menu-bloc__toggle">
+                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                <div class="menu-bloc__box">
+                    <i class="fa-solid fa-check menu-bloc__icon"></i>
+                </div>
+            </label>
+        </div>
+
+        <bouton class="button-purple menu__button">
+            <span class="button-purple__span center">
+                <span class="button-purple__text">Commander</span>
+            </span>
+        </bouton>
+
+      </div>
     </section>
 
-    <bouton class="button-purple">
-        <span class="button-purple__span">
-            <span class="button-purple__text">Explorer nos restaurants</span>
-        </span>
-    </bouton>
 
-    <footer>
-        <img src=".\images\logo\ohmyfood.png" alt="image de ohmyfood">
-        <div>
-            <i class="fa-solid fa-utensils"></i>
-            Proposer un restaurant
+    <footer class="footer">
+        <div class="footer__container">
+            <img src=".\images\logo\ohmyfood.png" alt="image de ohmyfood" class="footer__image">
+            <div class="footer__bloc">
+                <i class="fa-solid fa-utensils footer__icon"></i>
+                Proposer un restaurant
+            </div>
+            <div class="footer__bloc">
+                <i class="fa-solid fa-handshake footer__icon icon-shrink"></i>
+                Devenir partenaire
+            </div>
+            <div class="footer__bloc">Mentions légales</div>
+            <div class="footer__bloc">Contact</div>
         </div>
-        <div>
-            <i class="fa-solid fa-handshake"></i>
-            Devenir partenaire
-        </div>
-        <div>Mentions légales</div>
-        Contact
     </footer>
-
-</body>
+  </body>
+</html>

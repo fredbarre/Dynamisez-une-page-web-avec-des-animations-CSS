@@ -1,0 +1,87 @@
+.menu-bloc {
+  display: flex;
+  width: 350px;
+  height: 65px;
+  justify-content: space-between;
+  border-radius: 15px 15px 15px 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  &__text-bloc {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 330px;
+    overflow: hidden;
+  }
+
+  &:hover &__text-bloc {
+    width: 290px;
+  }
+
+  &__name {
+    padding-left: 10px;
+  }
+  &__second-row {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    font-size: 80%;
+    color: #99e2d0ff;
+    transition: transform 200ms linear;
+  }
+
+  &:hover &__icon {
+    transform: rotate(720deg);
+  }
+
+  &__price {
+    padding-right: 20px;
+  }
+
+  &__togglable {
+    display: none;
+  }
+
+  &__toggle {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: aquamarine;
+    border-radius: 00px 15px 15px 0px;
+    width: 0px;
+    transition: width 200ms linear;
+  }
+
+  &:hover &__toggle {
+    width: 60px;
+  }
+
+  &__togglable:checked + &__toggle,
+  &__active > &__toggle {
+    width: 60px;
+  }
+
+  &__box {
+    background-color: white;
+    border-radius: 80px 80px 80px 80px;
+    margin-left: 22px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  /*
+  &:hover &__box {
+    background-color: white;
+    border-radius: 80px 80px 80px 80px;
+    margin-left: 22px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }*/
+}

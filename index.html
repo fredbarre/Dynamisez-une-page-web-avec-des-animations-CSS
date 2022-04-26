@@ -85,11 +85,13 @@
                     <div class="restaurant__text">Ménilmontant</div>
                     </a>
                 </div>
-                
-                <div class="restaurant__icon-hover">
-                <div class="restaurant__icon-empty__div"><i class="fa-regular fa-heart restaurant__icon-empty"></i></div>
-                <div class="restaurant__icon-full__div"><i class="fa-solid fa-heart restaurant__icon-full"></i></div>
-                </div>
+                <label class="restaurant__toggle">
+                <input name="restaurant-choice" type="checkbox" checked="checked" class="restaurant__togglable" />
+                <span class="restaurant__icon-hover">
+                <span class="restaurant__icon-empty__div"><i class="fa-regular fa-heart restaurant__icon-empty" id="empty"></i></span>
+                <span class="restaurant__icon-full__div"><i class="fa-solid fa-heart restaurant__icon-full" id="full"></i></span>
+                </span>
+                </label>
             </div>
 
         </div>
