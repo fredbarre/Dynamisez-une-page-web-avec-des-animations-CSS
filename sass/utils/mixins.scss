@@ -1,0 +1,10 @@
+@mixin fade-animation {
+  animation: fadein 400ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  //animation-timing-function: cubic-bezier(1, 0.01, 1, -0.03);
+
+  //-moz-animation: fadein 1s cubic-bezier(1, 0.01, 1, -0.03); /* Firefox */
+  //-webkit-animation: fadein 1s cubic-bezier(1, 0.01, 1, -0.03); /* Safari et Chrome */
+  //-o-animation: fadein 1s cubic-bezier(1, 0.01, 1, -0.03); /* Opera */
+}

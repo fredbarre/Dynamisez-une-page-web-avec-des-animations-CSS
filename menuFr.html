@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ohmyfood</title>
@@ -9,214 +10,222 @@
     <link rel="stylesheet" href="./public/css/normalize.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
 
-    <script
-      src="https://kit.fontawesome.com/fed78bb2e8.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+    <script src="https://kit.fontawesome.com/fed78bb2e8.js" crossorigin="anonymous"></script>
+</head>
 
-  <body>
+<body>
     <header class="center">
-      <div class="header">
-        <i class="fa-solid fa-arrow-left header__icon"></i>
-        <img
-          src=".\images\logo\ohmyfood.png"
-          alt="image de ohmyfood"
-          class="header-image"
-        />
-      </div>
+        <div class="header">
+            <i class="fa-solid fa-arrow-left header__icon"></i>
+            <img src="./images/logo/ohmyfood.png" alt="image de ohmyfood" class="header-image" />
+        </div>
     </header>
 
     <div class="background center">
-      <img
-        src=".\images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-        alt="image de ohmyfood"
-        class="background__image"
-      />
-      <!--background image-->
+        <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image de ohmyfood"
+            class="background__image" />
+        <!--background image-->
     </div>
 
-    <section class="center">
-      <div class="background-gray menu__container">
-        <div class="menu__title">
-          <div class="menu__title__text">À la française</div>
-          <i class="fa-regular fa-heart menu__title__icon"></i>
-        </div>
+    <section class="background-gray center">
+        <div class="background-gray menu__container">
+            <div class="menu__title">
+                <h2 class="menu__title__text">À la française</h2>
+                <i class="fa-regular fa-heart menu__title__icon"></i>
+            </div>
 
-        <div>
-          <div class="menu__type">ENTREES</div>
-          <div class="menu__bar"><!--green bar--></div>
-          <div class="menu-bloc background-white">
-            <div class="menu-bloc__text-bloc">
-              <div class="menu-bloc__name bold">Tartare de poulpe acidulé</div>
-              <div class="menu-bloc__second-row">
-                <div class="menu-bloc__note">Aux zests d'orange</div>
-                <div class="menu-bloc__price">25€</div>
-              </div>
-            </div>
-            <label class="menu-bloc__toggle menu-bloc__active">
-              <input
-                name="menu choice"
-                type="checkbox"
-                class="menu-bloc__togglable"
-              />
-              <div class="menu-bloc__box">
-                <i class="fa-solid fa-check menu-bloc__icon"></i>
-              </div>
-            </label>
-          </div>
+            <div>
+                <div class="menu__type">ENTREES</div>
+                <div class="menu__bar">
+                    <!--green bar-->
+                </div>
+                <div class="menu-bloc background-white opacity fade">
+                    <div class="menu-bloc__text-bloc">
+                        <div class="menu-bloc__name bold">Tartare de poulpe acidulé</div>
+                        <div class="menu-bloc__second-row">
+                            <div class="menu-bloc__note">Aux zests d'orange</div>
+                            <div class="menu-bloc__price">25€</div>
+                        </div>
+                    </div>
+                    <label class="menu-bloc__toggle menu-bloc__active">
+                        <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                        <span class="menu-bloc__animation-container">
+                            <span class="menu-bloc__box">
+                                <i class="fa-solid fa-check menu-bloc__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
 
-        <div class="menu-bloc background-white">
-            <div class="menu-bloc__text-bloc">
-                <div class="menu-bloc__name bold">Velouté de légumes d'antan</div>
-                <div class="menu-bloc__second-row">
-                    <div class="menu-bloc__note">Carrotte, panais, topinambour</div>
-                    <div class="menu-bloc__price">35€</div>
+                <div class="menu-bloc background-white opacity fade1">
+                    <div class="menu-bloc__text-bloc">
+                        <div class="menu-bloc__name bold">Velouté de légumes d'antan</div>
+                        <div class="menu-bloc__second-row">
+                            <div class="menu-bloc__note">Carrotte, panais, topinambour</div>
+                            <div class="menu-bloc__price">35€</div>
+                        </div>
+                    </div>
+                    <label class="menu-bloc__toggle">
+                        <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                        <span class="menu-bloc__animation-container">
+                            <span class="menu-bloc__box">
+                                <i class="fa-solid fa-check menu-bloc__icon"></i>
+                            </span>
+                        </span>
+                    </label>
                 </div>
-            </div>
-            <label class="menu-bloc__toggle">
-                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
-                <div class="menu-bloc__box">
-                    <i class="fa-solid fa-check menu-bloc__icon"></i>
-                </div>
-            </label>
-        </div>
 
-        <div class="menu-bloc background-white">
-            <div class="menu-bloc__text-bloc">
-                <div class="menu-bloc__name bold">Soupe à l'oignon</div>
-                <div class="menu-bloc__second-row">
-                    <div class="menu-bloc__note">Revisitée</div>
-                    <div class="menu-bloc__price">20€</div>
+                <div class="menu-bloc background-white opacity fade2">
+                    <div class="menu-bloc__text-bloc">
+                        <div class="menu-bloc__name bold">Soupe à l'oignon</div>
+                        <div class="menu-bloc__second-row">
+                            <div class="menu-bloc__note">Revisitée</div>
+                            <div class="menu-bloc__price">20€</div>
+                        </div>
+                    </div>
+                    <label class="menu-bloc__toggle">
+                        <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                        <span class="menu-bloc__animation-container">
+                            <span class="menu-bloc__box">
+                                <i class="fa-solid fa-check menu-bloc__icon"></i>
+                            </span>
+                        </span>
+                    </label>
                 </div>
-            </div>
-            <label class="menu-bloc__toggle">
-                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
-                <div class="menu-bloc__box">
-                    <i class="fa-solid fa-check menu-bloc__icon"></i>
-                </div>
-            </label>
-        </div>
-
-
-        <div class="menu__type">PLATS</div>
-        <div class="menu__bar">
-            <!--green bar-->
-        </div>
-        <div class="menu-bloc background-white">
-            <div class="menu-bloc__text-bloc">
-                <div class="menu-bloc__name bold">Coquilles Saint-Jacques</div>
-                <div class="menu-bloc__second-row">
-                    <div class="menu-bloc__note">Accompagnées d'une purée de panais</div>
-                    <div class="menu-bloc__price">40€</div>
-                </div>
-            </div>
-            <label class="menu-bloc__toggle">
-                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
-                <div class="menu-bloc__box">
-                    <i class="fa-solid fa-check menu-bloc__icon"></i>
-                </div>
-            </label>
-        </div>
-        
-        <div class="menu-bloc background-white">
-            <div class="menu-bloc__text-bloc">
-                <div class="menu-bloc__name bold">Magret de canard</div>
-                <div class="menu-bloc__second-row">
-                    <div class="menu-bloc__note">Et parmentier de pommes de terres</div>
-                    <div class="menu-bloc__price">35€</div>
-                </div>
-            </div>
-            <label class="menu-bloc__toggle">
-                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
-                <div class="menu-bloc__box">
-                    <i class="fa-solid fa-check menu-bloc__icon"></i>
-                </div>
-            </label>
-        </div>
-        
-        <div class="menu-bloc background-white">
-            <div class="menu-bloc__text-bloc">
-                <div class="menu-bloc__name bold">Pigenneau d'Illes-et-Vilaine</div>
-                <div class="menu-bloc__second-row">
-                    <div class="menu-bloc__note">Sur son lit de gnocchis aux légumes</div>
-                    <div class="menu-bloc__price">44€</div>
-                </div>
-            </div>
-            <label class="menu-bloc__toggle">
-                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
-                <div class="menu-bloc__box">
-                    <i class="fa-solid fa-check menu-bloc__icon"></i>
-                </div>
-            </label>
-        </div>
 
 
-        <div class="menu__type">DESSERTS</div>
-        <div class="menu__bar">
-            <!--green bar-->
-        </div>
-        <div class="menu-bloc background-white">
-            <div class="menu-bloc__text-bloc">
-                <div class="menu-bloc__name bold">Pétales de violettes glacés</div>
-                <div class="menu-bloc__second-row">
-                    <div class="menu-bloc__note">Et purée de noisettes</div>
-                    <div class="menu-bloc__price">18€</div>
+                <div class="menu__type">PLATS</div>
+                <div class="menu__bar">
+                    <!--green bar-->
                 </div>
-            </div>
-            <label class="menu-bloc__toggle">
-                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
-                <div class="menu-bloc__box">
-                    <i class="fa-solid fa-check menu-bloc__icon"></i>
+                <div class="menu-bloc background-white opacity fade3">
+                    <div class="menu-bloc__text-bloc">
+                        <div class="menu-bloc__name bold">Coquilles Saint-Jacques</div>
+                        <div class="menu-bloc__second-row">
+                            <div class="menu-bloc__note">Accompagnées d'une purée de panais</div>
+                            <div class="menu-bloc__price">40€</div>
+                        </div>
+                    </div>
+                    <label class="menu-bloc__toggle">
+                        <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                        <span class="menu-bloc__animation-container">
+                            <span class="menu-bloc__box">
+                                <i class="fa-solid fa-check menu-bloc__icon"></i>
+                            </span>
+                        </span>
+                    </label>
                 </div>
-            </label>
-        </div>
-        
-        <div class="menu-bloc background-white">
-            <div class="menu-bloc__text-bloc">
-                <div class="menu-bloc__name bold">Fondant au chocolat</div>
-                <div class="menu-bloc__second-row">
-                    <div class="menu-bloc__note">Revisité</div>
-                    <div class="menu-bloc__price">22€</div>
-                </div>
-            </div>
-            <label class="menu-bloc__toggle">
-                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
-                <div class="menu-bloc__box">
-                    <i class="fa-solid fa-check menu-bloc__icon"></i>
-                </div>
-            </label>
-        </div>
-        
-        <div class="menu-bloc background-white">
-            <div class="menu-bloc__text-bloc">
-                <div class="menu-bloc__name bold">Millefeuille croustillant</div>
-                <div class="menu-bloc__second-row">
-                    <div class="menu-bloc__note">Myrtilles et pâtes d'amande</div>
-                    <div class="menu-bloc__price">23€</div>
-                </div>
-            </div>
-            <label class="menu-bloc__toggle">
-                <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
-                <div class="menu-bloc__box">
-                    <i class="fa-solid fa-check menu-bloc__icon"></i>
-                </div>
-            </label>
-        </div>
 
-        <bouton class="button-purple menu__button">
-            <span class="button-purple__span center">
-                <span class="button-purple__text">Commander</span>
-            </span>
-        </bouton>
+                <div class="menu-bloc background-white opacity fade4">
+                    <div class="menu-bloc__text-bloc">
+                        <div class="menu-bloc__name bold">Magret de canard</div>
+                        <div class="menu-bloc__second-row">
+                            <div class="menu-bloc__note">Et parmentier de pommes de terres</div>
+                            <div class="menu-bloc__price">35€</div>
+                        </div>
+                    </div>
+                    <label class="menu-bloc__toggle">
+                        <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                        <span class="menu-bloc__animation-container">
+                            <span class="menu-bloc__box">
+                                <i class="fa-solid fa-check menu-bloc__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
 
-      </div>
+                <div class="menu-bloc background-white opacity fade5">
+                    <div class="menu-bloc__text-bloc">
+                        <div class="menu-bloc__name bold">Pigenneau d'Illes-et-Vilaine</div>
+                        <div class="menu-bloc__second-row">
+                            <div class="menu-bloc__note">Sur son lit de gnocchis aux légumes</div>
+                            <div class="menu-bloc__price">44€</div>
+                        </div>
+                    </div>
+                    <label class="menu-bloc__toggle">
+                        <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                        <span class="menu-bloc__animation-container">
+                            <span class="menu-bloc__box">
+                                <i class="fa-solid fa-check menu-bloc__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+
+                <div class="menu__type">DESSERTS</div>
+                <div class="menu__bar">
+                    <!--green bar-->
+                </div>
+                <div class="menu-bloc background-white opacity fade6">
+                    <div class="menu-bloc__text-bloc">
+                        <div class="menu-bloc__name bold">Pétales de violettes glacés</div>
+                        <div class="menu-bloc__second-row">
+                            <div class="menu-bloc__note">Et purée de noisettes</div>
+                            <div class="menu-bloc__price">18€</div>
+                        </div>
+                    </div>
+                    <label class="menu-bloc__toggle">
+                        <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                        <span class="menu-bloc__animation-container">
+                            <span class="menu-bloc__box">
+                                <i class="fa-solid fa-check menu-bloc__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu-bloc background-white opacity fade7">
+                    <div class="menu-bloc__text-bloc">
+                        <div class="menu-bloc__name bold">Fondant au chocolat</div>
+                        <div class="menu-bloc__second-row">
+                            <div class="menu-bloc__note">Revisité</div>
+                            <div class="menu-bloc__price">22€</div>
+                        </div>
+                    </div>
+                    <label class="menu-bloc__toggle">
+                        <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                        <span class="menu-bloc__animation-container">
+                            <span class="menu-bloc__box">
+                                <i class="fa-solid fa-check menu-bloc__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu-bloc background-white opacity fade8">
+                    <div class="menu-bloc__text-bloc">
+                        <div class="menu-bloc__name bold">Millefeuille croustillant</div>
+                        <div class="menu-bloc__second-row">
+                            <div class="menu-bloc__note">Myrtilles et pâtes d'amande</div>
+                            <div class="menu-bloc__price">23€</div>
+                        </div>
+                    </div>
+                    <label class="menu-bloc__toggle">
+                        <input name="menu choice" type="checkbox" class="menu-bloc__togglable" />
+                        <span class="menu-bloc__animation-container">
+                            <span class="menu-bloc__box">
+                                <i class="fa-solid fa-check menu-bloc__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+            </div>
+            <button class="button-purple menu__button background-gray">
+                <span class="button-purple__span center">
+                    <span class="button-purple__text">Commander</span>
+                </span>
+            </button>
+
+
+        </div>
     </section>
 
 
     <footer class="footer">
         <div class="footer__container">
-            <img src=".\images\logo\ohmyfood.png" alt="image de ohmyfood" class="footer__image">
+            <img src="./images/logo/ohmyfood.png" alt="image de ohmyfood" class="footer__image">
             <div class="footer__bloc">
                 <i class="fa-solid fa-utensils footer__icon"></i>
                 Proposer un restaurant
@@ -229,5 +238,6 @@
             <div class="footer__bloc">Contact</div>
         </div>
     </footer>
-  </body>
+</body>
+
 </html>

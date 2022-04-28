@@ -35,10 +35,6 @@
   &__icon-full__div {
     display: none;
   }
-  /*
-    &__icon-empty__div {
-        display: none;
-    }*/
 
   &__textDiv {
     display: flex;
@@ -79,13 +75,6 @@
   &__section {
     padding-bottom: 60px;
   }
-  &__tooglable:checked + &__icon-hover &__icon-empty__div {
-    display: none;
-  }
-
-  &__tooglable:checked + &__icon-hover &__icon-full__div {
-    display: inline;
-  }
 
   &__icon-hover:hover &__icon-empty__div {
     display: none;
@@ -94,30 +83,16 @@
   &__icon-hover:hover &__icon-full__div {
     display: inline;
   }
-}
 
-/*
-.restaurant__togglable:checked {
-  display: inline;
-}*/
-
-/*
-.restaurant__togglable:checked > .restaurant__icon-empty__div {
-  display: none;
-}
-.restaurant__togglable:checked > .restaurant__icon-full__div {
-  display: inline;
-}*/
-
-.restaurant__togglable {
-  //*display: none;*/
-}
-/*
-.restaurant__togglable:checked {
-  .restaurant__icon-empty__div {
+  &__togglable {
     display: none;
   }
-  .restaurant__icon-full__div {
+
+  &__togglable:checked + &__icon-hover &__icon-full__div {
     display: inline;
   }
-}*/
+
+  &__togglable:checked + &__icon-hover &__icon-empty__div {
+    display: none;
+  }
+}

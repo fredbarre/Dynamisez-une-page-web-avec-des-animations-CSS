@@ -8,7 +8,20 @@
   margin-right: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
-
+  /*
+  animation: margin-Decrease 400ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  @keyframes margin-Decrease {
+    from {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    to {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }*/
   &__text-bloc {
     display: flex;
     justify-content: space-around;
@@ -41,7 +54,10 @@
   &:hover &__icon {
     transform: rotate(720deg);
   }
-
+  /*
+  &__togglable:checked + &__animation-container &__box &__icon {
+  }
+*/
   &__price {
     padding-right: 20px;
   }
@@ -49,23 +65,25 @@
   &__togglable {
     display: none;
   }
-
+  /*
   &__toggle {
+  }*/
+  &__animation-container {
     display: flex;
     align-items: center;
     overflow: hidden;
     background-color: aquamarine;
     border-radius: 00px 15px 15px 0px;
     width: 0px;
+    height: 65px;
     transition: width 200ms linear;
   }
 
-  &:hover &__toggle {
+  &:hover &__animation-container {
     width: 60px;
   }
 
-  &__togglable:checked + &__toggle,
-  &__active > &__toggle {
+  &__togglable:checked + &__animation-container {
     width: 60px;
   }
 
@@ -76,12 +94,4 @@
     padding-left: 2px;
     padding-right: 2px;
   }
-  /*
-  &:hover &__box {
-    background-color: white;
-    border-radius: 80px 80px 80px 80px;
-    margin-left: 22px;
-    padding-left: 2px;
-    padding-right: 2px;
-  }*/
 }
