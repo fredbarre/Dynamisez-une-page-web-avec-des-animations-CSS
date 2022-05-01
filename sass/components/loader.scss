@@ -1,0 +1,71 @@
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #ff79da;
+  border-bottom-color: #99e2d0;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+
+  &__container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 1;
+    animation: clear 1s linear forwards;
+    animation-delay: 2s;
+    /*background-image: linear-gradient(0deg, black 0%, black 100%);*/
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fonction-bloc__number,
+.restaurant__new,
+.footer {
+  opacity: 0;
+  animation: clearreverse 1s linear forwards;
+  animation-delay: 3s;
+}
+
+@keyframes vis {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes clear {
+  0% {
+    opacity: 1;
+    height: 100%;
+  }
+  100% {
+    height: 0px;
+    opacity: 0;
+  }
+}
+@keyframes clearreverse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

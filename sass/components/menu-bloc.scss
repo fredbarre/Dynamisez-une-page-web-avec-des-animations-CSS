@@ -8,6 +8,7 @@
   margin-right: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
+  @include shadow;
   /*
   animation: margin-Decrease 400ms;
   animation-timing-function: linear;
@@ -36,6 +37,17 @@
 
   &__name {
     padding-left: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+  }
+
+  &__note {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
   }
   &__second-row {
     display: flex;
@@ -48,11 +60,12 @@
     align-items: center;
     font-size: 80%;
     color: #99e2d0ff;
-    transition: transform 200ms linear;
+    transition: transform 0ms linear;
   }
 
   &:hover &__icon {
     transform: rotate(720deg);
+    transition: transform 200ms linear;
   }
   /*
   &__togglable:checked + &__animation-container &__box &__icon {

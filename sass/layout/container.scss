@@ -40,6 +40,7 @@
     /*display: inline-block;*/
     width: 326px;
     height: 75px;
+    @include shadow;
   }
 
   &__text {
@@ -62,12 +63,8 @@
 }
 
 .location {
-  background-image: linear-gradient(
-    180deg,
-    #d2d2d2ff 0%,
-    #dededeff 10%,
-    #eaeaeaff 75%
-  );
+  background-color: #eaeaeaff;
+  border-top: 2px solid #cfcfcfff;
 
   &__Container {
     display: flex;
@@ -105,12 +102,21 @@
 .background {
   &__image {
     height: 400px;
-    width: 400px;
+    width: 100%;
     object-fit: cover;
   }
 }
 
 .menu {
+  &__container-container {
+    border-radius: 40px 40px 0px 0px;
+    width: 100%;
+    position: relative;
+    bottom: 30px;
+    display: flex;
+
+    justify-content: center;
+  }
   &__container {
     display: flex;
 
@@ -118,28 +124,30 @@
     flex-direction: column;
 
     width: 400px;
+    border-radius: 40px 40px 0px 0px;
+    /*
     border-radius: 20px 20px 0px 0px;
     position: relative;
-    bottom: 30px;
+    bottom: 30px;*/
   }
 
   &__title {
     display: flex;
-    justify-content: flex-start;
-    /*margin-top: 15px;
-    margin-bottom: 15px;*/
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 15px;
     margin-right: 15px;
     align-items: center;
-    gap: 90px;
   }
-
+  /*
   &__title__text {
     font-size: 40px;
-  }
+  }*/
 
   &__title__icon {
-    font-size: 30px;
+    font-size: 25px;
+    padding-right: 30px;
   }
 
   &__type {

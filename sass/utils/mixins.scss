@@ -8,3 +8,7 @@
   //-webkit-animation: fadein 1s cubic-bezier(1, 0.01, 1, -0.03); /* Safari et Chrome */
   //-o-animation: fadein 1s cubic-bezier(1, 0.01, 1, -0.03); /* Opera */
 }
+
+@mixin shadow {
+  box-shadow: 0 4px 8px 0 #e7e7e7ff, 0 6px 20px 0 #e7e7e7ff;
+}

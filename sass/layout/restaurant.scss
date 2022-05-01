@@ -3,6 +3,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  &__container {
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+    flex-direction: column;
+    border-radius: 20px 20px 20px 20px;
+    @include shadow;
+  }
+
+  //@include shadow;
 
   &__image {
     width: 336px;
@@ -58,7 +68,7 @@
     align-items: center;
     position: relative;
     top: 40px;
-    left: 260px;
+    left: 120px;
     font-size: 80%;
   }
 

@@ -1,42 +1,49 @@
-*{
-    font-size: 15px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 
-.bold{
-    font-weight: bold;
+.bold {
+  font-weight: bold;
 }
 
-h2{
-    font-size: 25px;
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
 }
 
-.background-gray{
-    background-color: #f6f6f6ff;
+h2 {
+  font-size: 25px;
 }
 
-.background-darkgray{
-    background-color: #eaeaeaff;
+.background-gray {
+  background-color: #f6f6f6ff;
 }
 
-.background-white{
-    background-color: white;
+.background-darkgray {
+  background-color: #eaeaeaff;
 }
 
-.color-purple{
-    color: #9356dcff;
+.background-white {
+  background-color: white;
 }
 
-span.background-lightpurple{
-    background-color: #f5edffff;
+.color-purple {
+  color: #9356dcff;
 }
 
-.icon-shrink{
-    font-size: 75%;
+span.background-lightpurple {
+  background-color: #f5edffff;
+}
+
+.icon-shrink {
+  font-size: 75%;
 }
 
 a:link,
 a:visited {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
 }

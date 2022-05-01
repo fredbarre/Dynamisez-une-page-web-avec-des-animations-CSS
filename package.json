@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "dev":"concurrently npm:sass npm:live-server",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "live-server": "live-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/fredbarre/projet3/issues"
   },
-  "homepage": "https://github.com/fredbarre/projet3#readme"
+  "homepage": "https://github.com/fredbarre/projet3#readme",
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.51.0"
+  }
 }
