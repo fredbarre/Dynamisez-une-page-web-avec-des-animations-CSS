@@ -524,6 +524,21 @@ a:visited {
 }
 .restaurant__icon-full {
   color: purple;
+  /*background: linear-gradient(
+    170deg,
+    #e972daff 0%,
+    #b862db 50%,
+    #a15adb 100%
+  );
+  background-clip: text;
+  display: initial;*/
+  /*
+  background-color: linear-gradient(
+    170deg,
+    #e972daff 0%,
+    #b862db 50%,
+    #a15adb 100%
+  );*/
 }
 .restaurant__icon-full__div {
   display: none;
