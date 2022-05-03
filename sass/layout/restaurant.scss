@@ -39,7 +39,17 @@
   }
 
   &__icon-full {
-    color: purple;
+    // color: purple;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#a15bdcff),
+      to(#e677dbff)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     /*background: linear-gradient(
       170deg,
       #e972daff 0%,
@@ -108,6 +118,51 @@
 
   &__icon-hover:hover &__icon-full__div {
     display: inline;
+  }
+
+  &__icon-hover:hover > &__icon-full__div > &__icon-full {
+    animation: heartfill 100ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes heartfill {
+    0% {
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(white),
+        to(white)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    50% {
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#e677dbff),
+        to(white)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#a15bdcff),
+        to(#e677dbff)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   &__togglable {

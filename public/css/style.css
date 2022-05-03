@@ -523,7 +523,9 @@ a:visited {
   font-size: 20px;
 }
 .restaurant__icon-full {
-  color: purple;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#e677db));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   /*background: linear-gradient(
     170deg,
     #e972daff 0%,
@@ -583,6 +585,30 @@ a:visited {
 }
 .restaurant__icon-hover:hover .restaurant__icon-full__div {
   display: inline;
+}
+.restaurant__icon-hover:hover > .restaurant__icon-full__div > .restaurant__icon-full {
+  animation: heartfill 100ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes heartfill {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#e677db), to(white));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#e677db));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 .restaurant__togglable {
   display: none;
