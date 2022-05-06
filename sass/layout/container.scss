@@ -16,6 +16,18 @@
 
 .intro {
   height: 285px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  &__blocktext {
+    width: 350px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__text1 {
     margin-left: 60px;

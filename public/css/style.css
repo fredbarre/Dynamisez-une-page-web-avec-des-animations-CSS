@@ -443,6 +443,17 @@ a:visited {
 }
 .intro {
   height: 285px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+.intro__blocktext {
+  width: 350px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 .intro__text1 {
   margin-left: 60px;
