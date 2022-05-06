@@ -1,3 +1,5 @@
+/*Gére le bloc contenant le nom du menu,description et prix 
+(pages:note enchantée, La palette du goût,)*/
 .menu-bloc {
   display: flex;
   width: 350px;
@@ -9,20 +11,8 @@
   margin-top: 10px;
   margin-bottom: 10px;
   @include shadow;
-  /*
-  animation: margin-Decrease 400ms;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  @keyframes margin-Decrease {
-    from {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-    to {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-  }*/
+  cursor: pointer;
+
   &__text-bloc {
     display: flex;
     justify-content: space-around;

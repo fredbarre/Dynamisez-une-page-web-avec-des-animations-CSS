@@ -10,6 +10,10 @@
   /* Safari/Chrome, autres WebKit */
 }
 
+button {
+  cursor: pointer;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -38,74 +42,74 @@
   opacity: 0;
 }
 
-.fade {
+.fade-1 {
   animation: fadein 400ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-delay: 125ms;
 }
 
-.fade1 {
+.fade-2 {
   animation: fadein 400ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-delay: 250ms;
 }
 
-.fade2 {
+.fade-3 {
   animation: fadein 400ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-delay: 375ms;
 }
 
-.fade3 {
+.fade-4 {
   animation: fadein 400ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-delay: 500ms;
 }
 
-.fade4 {
+.fade-5 {
   animation: fadein 400ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-delay: 625ms;
 }
 
-.fade5 {
+.fade-6 {
   animation: fadein 400ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-delay: 750ms;
 }
 
-.fade6 {
+.fade-7 {
   animation: fadein 400ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  animation-delay: 675ms;
+  animation-delay: 875ms;
 }
 
-.fade7 {
+.fade-8 {
   animation: fadein 400ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  animation-delay: 800ms;
+  animation-delay: 1000ms;
 }
 
-.fade8 {
+.fade-9 {
   animation: fadein 400ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  animation-delay: 925ms;
+  animation-delay: 1125ms;
 }
 
-.fade9 {
+.fade-10 {
   animation: fadein 400ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  animation-delay: 1050ms;
+  animation-delay: 1250ms;
 }
 
 @keyframes fadein {
@@ -237,7 +241,13 @@ a:visited {
   font-size: 125%;
   font-weight: bold;
 }
+.button-purple__span:hover {
+  background-image: linear-gradient(170deg, #f7bbf6 0%, #fc76fa 50%, #e972da 100%);
+  box-shadow: 0 4px 8px 0, 0 6px 20px;
+}
 
+/*Gére le bloc contenant le nom du menu,description et prix 
+(pages:note enchantée, La palette du goût,)*/
 .menu-bloc {
   display: flex;
   width: 350px;
@@ -249,20 +259,7 @@ a:visited {
   margin-top: 10px;
   margin-bottom: 10px;
   box-shadow: 0 4px 8px 0 #e7e7e7, 0 6px 20px 0 #e7e7e7;
-  /*
-  animation: margin-Decrease 400ms;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  @keyframes margin-Decrease {
-    from {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-    to {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-  }*/
+  cursor: pointer;
   /*
     &__togglable:checked + &__animation-container &__box &__icon {
     }
@@ -340,20 +337,12 @@ a:visited {
   padding-right: 2px;
 }
 
-.fonction-bloc {
-  /*width: 430px;
-    height: 100px;*/
-  /*margin-top: 13px;
-    margin-bottom: 13px;*/
-}
 .fonction-bloc__container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  /*width: 430px;
-      height: 100px;*/
 }
 .fonction-bloc__number {
   background-color: #9356dc;
@@ -363,8 +352,6 @@ a:visited {
   padding-bottom: 5px;
   padding-right: 8px;
   padding-left: 8px;
-  /*margin-top: 65px;
-      margin-bottom: 65px;*/
   font-size: 125%;
   position: relative;
   left: 15px;
@@ -374,10 +361,7 @@ a:visited {
   justify-content: flex-start;
   align-items: center;
   background-color: #f6f6f6;
-  /*padding-top: 20px;
-      padding-bottom: 20px;*/
   border-radius: 15px 15px 15px 15px;
-  /*display: inline-block;*/
   width: 326px;
   height: 75px;
   box-shadow: 0 4px 8px 0 #e7e7e7, 0 6px 20px 0 #e7e7e7;
@@ -386,8 +370,6 @@ a:visited {
   padding-right: 50px;
   font-size: 125%;
   font-weight: bold;
-  /*margin-right: 20px;
-      margin-left: 20px;*/
 }
 .fonction-bloc__icon {
   margin-right: 30px;
@@ -398,45 +380,9 @@ a:visited {
   margin-left: 20px;
 }
 
-.location {
-  background-color: #eaeaea;
-  border-top: 2px solid #cfcfcf;
-}
-.location__Container {
-  display: flex;
-  justify-content: space-around;
-  width: 140px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.intro {
-  height: 285px;
-}
-.intro__text1 {
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 30px;
-  /*padding-bottom: 10px;*/
-  text-align: center;
-}
-.intro__text2 {
-  margin-left: 35px;
-  margin-right: 35px;
-  text-align: center;
-}
-
-.background__image {
-  height: 400px;
-  width: 100%;
-  object-fit: cover;
-}
-
 .menu {
   /*
   &__title__text {
-    font-size: 40px;
   }*/
 }
 .menu__container-container {
@@ -453,10 +399,6 @@ a:visited {
   flex-direction: column;
   width: 400px;
   border-radius: 40px 40px 0px 0px;
-  /*
-  border-radius: 20px 20px 0px 0px;
-  position: relative;
-  bottom: 30px;*/
 }
 .menu__title {
   display: flex;
@@ -488,6 +430,40 @@ a:visited {
   padding-bottom: 40px;
 }
 
+.location {
+  background-color: #eaeaea;
+  border-top: 2px solid #cfcfcf;
+}
+.location__Container {
+  display: flex;
+  justify-content: space-around;
+  width: 140px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.intro {
+  height: 285px;
+}
+.intro__text1 {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 30px;
+  text-align: center;
+}
+.intro__text2 {
+  margin-left: 35px;
+  margin-right: 35px;
+  text-align: center;
+}
+
+.background__image {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .restaurant {
   display: flex;
   justify-content: center;
@@ -496,8 +472,6 @@ a:visited {
 }
 .restaurant__container {
   display: flex;
-  /*justify-content: center;
-  align-items: center;*/
   flex-direction: column;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 0 4px 8px 0 #e7e7e7, 0 6px 20px 0 #e7e7e7;
@@ -526,21 +500,6 @@ a:visited {
   background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#e677db));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /*background: linear-gradient(
-    170deg,
-    #e972daff 0%,
-    #b862db 50%,
-    #a15adb 100%
-  );
-  background-clip: text;
-  display: initial;*/
-  /*
-  background-color: linear-gradient(
-    170deg,
-    #e972daff 0%,
-    #b862db 50%,
-    #a15adb 100%
-  );*/
 }
 .restaurant__icon-full__div {
   display: none;
@@ -579,6 +538,9 @@ a:visited {
 }
 .restaurant__section {
   padding-bottom: 60px;
+}
+.restaurant__icon-hover {
+  cursor: pointer;
 }
 .restaurant__icon-hover:hover .restaurant__icon-empty__div {
   display: none;
@@ -706,7 +668,7 @@ a:visited {
 }
 .fonction-bloc__number,
 .restaurant__new,
-.footer {
+.loader__footer {
   opacity: 0;
   animation: clearreverse 1s linear forwards;
   animation-delay: 3s;

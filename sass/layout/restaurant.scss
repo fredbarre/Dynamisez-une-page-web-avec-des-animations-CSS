@@ -5,14 +5,10 @@
   flex-direction: column;
   &__container {
     display: flex;
-    /*justify-content: center;
-    align-items: center;*/
     flex-direction: column;
     border-radius: 20px 20px 20px 20px;
     @include shadow;
   }
-
-  //@include shadow;
 
   &__image {
     width: 336px;
@@ -39,7 +35,6 @@
   }
 
   &__icon-full {
-    // color: purple;
     background: -webkit-gradient(
       linear,
       left top,
@@ -49,23 +44,6 @@
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    /*background: linear-gradient(
-      170deg,
-      #e972daff 0%,
-      #b862db 50%,
-      #a15adb 100%
-    );
-    background-clip: text;
-    display: initial;*/
-
-    /*
-    background-color: linear-gradient(
-      170deg,
-      #e972daff 0%,
-      #b862db 50%,
-      #a15adb 100%
-    );*/
   }
 
   &__icon-full__div {
@@ -110,6 +88,10 @@
 
   &__section {
     padding-bottom: 60px;
+  }
+
+  &__icon-hover {
+    cursor: pointer;
   }
 
   &__icon-hover:hover &__icon-empty__div {

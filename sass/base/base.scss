@@ -8,6 +8,10 @@
   /* Safari/Chrome, autres WebKit */
 }
 
+button {
+  cursor: pointer;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -35,49 +39,14 @@
   opacity: 0;
 }
 
-.fade {
-  @include fade-animation;
-  animation-delay: 125ms;
-}
-.fade1 {
-  @include fade-animation;
-  animation-delay: 250ms;
-}
-.fade2 {
-  @include fade-animation;
-  animation-delay: 250ms+125ms;
-}
-.fade3 {
-  @include fade-animation;
-  animation-delay: 500ms;
-}
-.fade4 {
-  @include fade-animation;
-  animation-delay: 625ms;
-}
-.fade5 {
-  @include fade-animation;
-  animation-delay: 750ms;
-}
-
-.fade6 {
-  @include fade-animation;
-  animation-delay: 675ms;
-}
-
-.fade7 {
-  @include fade-animation;
-  animation-delay: 800ms;
-}
-
-.fade8 {
-  @include fade-animation;
-  animation-delay: 925ms;
-}
-
-.fade9 {
-  @include fade-animation;
-  animation-delay: 1050ms;
+@for $i from 1 through 10 {
+  .fade-#{$i} {
+    animation: fadein 400ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    //@include fade-animation;
+    animation-delay: 125ms * $i;
+  }
 }
 
 @keyframes fadein {

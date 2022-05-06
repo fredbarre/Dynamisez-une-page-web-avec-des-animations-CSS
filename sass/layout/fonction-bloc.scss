@@ -1,0 +1,49 @@
+.fonction-bloc {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__number {
+    background-color: #9356dcff;
+    border-radius: 80px 80px 80px 80px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 125%;
+    position: relative;
+    left: 15px;
+  }
+
+  &__span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f6f6f6ff;
+    border-radius: 15px 15px 15px 15px;
+    width: 326px;
+    height: 75px;
+    @include shadow;
+  }
+
+  &__text {
+    padding-right: 50px;
+    font-size: 125%;
+    font-weight: bold;
+  }
+
+  &__icon {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  &__title {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
