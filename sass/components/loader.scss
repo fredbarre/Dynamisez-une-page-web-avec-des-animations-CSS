@@ -17,10 +17,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: white;
     opacity: 1;
     animation: clear 1s linear forwards;
     animation-delay: 2s;
+    z-index: 1000;
     /*background-image: linear-gradient(0deg, black 0%, black 100%);*/
   }
 }
@@ -33,14 +34,14 @@
     transform: rotate(360deg);
   }
 }
-
+/*
 .fonction-bloc__number,
 .restaurant__new,
 .loader__footer {
   opacity: 0;
   animation: clearreverse 1s linear forwards;
   animation-delay: 3s;
-}
+}*/
 
 @keyframes vis {
   0% {
@@ -54,10 +55,10 @@
 @keyframes clear {
   0% {
     opacity: 1;
-    height: 100%;
+    transform: translate(0vh, 0vh);
   }
   100% {
-    height: 0px;
+    transform: translate(0vh, -100vh);
     opacity: 0;
   }
 }

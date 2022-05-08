@@ -16,8 +16,8 @@
     padding-right: 8px;
     padding-left: 8px;
     font-size: 125%;
-    position: relative;
-    left: 15px;
+    position: absolute;
+    left: -10px;
   }
 
   &__span {
@@ -29,6 +29,7 @@
     width: 326px;
     height: 75px;
     @include shadow;
+    position: relative;
   }
 
   &__text {

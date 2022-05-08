@@ -6,8 +6,11 @@
   &__container {
     display: flex;
     flex-direction: column;
+    position: relative;
     border-radius: 20px 20px 20px 20px;
     @include shadow;
+    margin-top: 14px;
+    margin-bottom: 14px;
   }
 
   &__image {
@@ -70,9 +73,9 @@
     height: 28px;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 40px;
-    left: 120px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     font-size: 80%;
   }
 
@@ -103,7 +106,7 @@
   }
 
   &__icon-hover:hover > &__icon-full__div > &__icon-full {
-    animation: heartfill 100ms;
+    animation: heartfill 300ms;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     -webkit-background-clip: text;
@@ -122,6 +125,16 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    /*
+    14% {
+    }
+
+    28% {
+    }
+
+    42% {
+    }
+*/
     50% {
       background: -webkit-gradient(
         linear,
@@ -133,7 +146,16 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    /*
+    54% {
+    }
 
+    68% {
+    }
+
+    82% {
+    }
+*/
     100% {
       background: -webkit-gradient(
         linear,
