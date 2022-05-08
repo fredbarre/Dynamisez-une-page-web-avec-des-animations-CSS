@@ -38,6 +38,8 @@
   }
 
   &__icon-full {
+    //background: white;
+
     background: -webkit-gradient(
       linear,
       left top,
@@ -109,63 +111,27 @@
     animation: heartfill 300ms;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
+
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, #a15bdcff),
+      color-stop(100%, #e677dbff)
+    );
+    background-repeat: no-repeat;
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   @keyframes heartfill {
     0% {
-      background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(white),
-        to(white)
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    /*
-    14% {
+      background-position: 0px -20px;
     }
 
-    28% {
-    }
-
-    42% {
-    }
-*/
-    50% {
-      background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(#e677dbff),
-        to(white)
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    /*
-    54% {
-    }
-
-    68% {
-    }
-
-    82% {
-    }
-*/
     100% {
-      background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(#a15bdcff),
-        to(#e677dbff)
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background-position: 0px 0px;
     }
   }
 

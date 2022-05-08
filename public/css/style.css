@@ -567,44 +567,17 @@ a:visited {
   animation: heartfill 300ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a15bdc), color-stop(100%, #e677db));
+  background-repeat: no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @keyframes heartfill {
   0% {
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-position: 0px -20px;
   }
-  /*
-      14% {
-      }
-
-      28% {
-      }
-
-      42% {
-      }
-  */
-  50% {
-    background: -webkit-gradient(linear, left top, left bottom, from(#e677db), to(white));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  /*
-      54% {
-      }
-
-      68% {
-      }
-
-      82% {
-      }
-  */
   100% {
-    background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#e677db));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-position: 0px 0px;
   }
 }
 .restaurant__togglable {
