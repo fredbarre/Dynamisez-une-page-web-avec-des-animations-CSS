@@ -231,6 +231,7 @@ a:visited {
       padding-bottom: 20px;*/
   display: flex;
   height: 66px;
+  align-items: center;
 }
 .button-purple__text {
   margin-left: 20px;
@@ -251,11 +252,12 @@ a:visited {
 .menu-bloc {
   display: flex;
   width: 350px;
+  max-width: 100%;
   height: 65px;
   justify-content: space-between;
   border-radius: 15px 15px 15px 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+  /* margin-left: 15px;
+  margin-right: 15px;*/
   margin-top: 10px;
   margin-bottom: 10px;
   box-shadow: 0 4px 8px 0 #e7e7e7, 0 6px 20px 0 #e7e7e7;
@@ -308,7 +310,7 @@ a:visited {
   transition: transform 200ms linear;
 }
 .menu-bloc__price {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 .menu-bloc__togglable {
   display: none;
@@ -317,7 +319,7 @@ a:visited {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: aquamarine;
+  background-color: #99e2d0;
   border-radius: 0px 15px 15px 0px;
   width: 0px;
   height: 65px;
@@ -333,8 +335,8 @@ a:visited {
   background-color: white;
   border-radius: 80px 80px 80px 80px;
   margin-left: 22px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .fonction-bloc__container {
@@ -363,6 +365,7 @@ a:visited {
   background-color: #f6f6f6;
   border-radius: 15px 15px 15px 15px;
   width: 326px;
+  max-width: 80%;
   height: 75px;
   box-shadow: 0 4px 8px 0 #e7e7e7, 0 6px 20px 0 #e7e7e7;
   position: relative;
@@ -389,6 +392,8 @@ a:visited {
 .menu__container-container {
   border-radius: 40px 40px 0px 0px;
   width: 100%;
+  /*width: 400px;
+  max-width: 90%;*/
   position: relative;
   bottom: 30px;
   display: flex;
@@ -398,8 +403,14 @@ a:visited {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  align-items: center;
   width: 400px;
+  max-width: 90%;
   border-radius: 40px 40px 0px 0px;
+}
+.menu__cont3 {
+  max-width: 90%;
+  width: 400px;
 }
 .menu__title {
   display: flex;
@@ -409,21 +420,23 @@ a:visited {
   margin-left: 15px;
   margin-right: 15px;
   align-items: center;
+  width: 360px;
+  max-width: 100%;
 }
 .menu__title__icon {
   font-size: 25px;
   padding-right: 30px;
 }
 .menu__type {
-  margin-left: 15px;
-  margin-right: 15px;
+  /*margin-left: 15px;
+  margin-right: 15px;*/
   padding-bottom: 5px;
 }
 .menu__bar {
   width: 30px;
-  border-top: 1px solid green;
-  margin-left: 15px;
-  margin-right: 15px;
+  border-top: 1px solid #99e2d0;
+  /*margin-left: 15px;
+  margin-right: 15px;*/
 }
 .menu__button {
   margin-top: 40px;
@@ -443,14 +456,15 @@ a:visited {
   margin-bottom: 20px;
 }
 .intro {
-  height: 285px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 }
 .intro__blocktext {
   width: 350px;
+  max-width: 90%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -490,14 +504,16 @@ a:visited {
   box-shadow: 0 4px 8px 0 #e7e7e7, 0 6px 20px 0 #e7e7e7;
   margin-top: 14px;
   margin-bottom: 14px;
+  width: 336px;
+  max-width: 90%;
 }
 .restaurant__image {
-  width: 336px;
+  width: 100%;
   height: 175px;
   border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
 }
 .restaurant__bottom {
-  width: 336px;
   height: 75px;
   display: flex;
   justify-content: space-between;
@@ -592,10 +608,10 @@ a:visited {
 
 .header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   width: 300px;
-  gap: 50px;
+  max-width: 90%;
 }
 .header__icon {
   font-size: 125%;

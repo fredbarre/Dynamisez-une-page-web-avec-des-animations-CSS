@@ -3,11 +3,12 @@
 .menu-bloc {
   display: flex;
   width: 350px;
+  max-width: 100%;
   height: 65px;
   justify-content: space-between;
   border-radius: 15px 15px 15px 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+  /* margin-left: 15px;
+  margin-right: 15px;*/
   margin-top: 10px;
   margin-bottom: 10px;
   @include shadow;
@@ -62,7 +63,7 @@
   }
 */
   &__price {
-    padding-right: 20px;
+    padding-right: 10px;
   }
 
   &__togglable {
@@ -75,7 +76,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    background-color: aquamarine;
+    background-color: #99e2d0ff;
     border-radius: 00px 15px 15px 0px;
     width: 0px;
     height: 65px;
@@ -94,7 +95,7 @@
     background-color: white;
     border-radius: 80px 80px 80px 80px;
     margin-left: 22px;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
   }
 }

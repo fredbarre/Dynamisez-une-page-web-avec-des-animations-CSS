@@ -27,6 +27,7 @@
     background-color: #f6f6f6ff;
     border-radius: 15px 15px 15px 15px;
     width: 326px;
+    max-width: 80%;
     height: 75px;
     @include shadow;
     position: relative;
