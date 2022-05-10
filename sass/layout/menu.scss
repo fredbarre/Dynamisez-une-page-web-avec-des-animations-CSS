@@ -2,8 +2,7 @@
   &__container-container {
     border-radius: 40px 40px 0px 0px;
     width: 100%;
-    /*width: 400px;
-    max-width: 90%;*/
+
     position: relative;
     bottom: 30px;
     display: flex;
@@ -32,12 +31,11 @@
     justify-content: space-between;
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-left: 15px;
+    //margin-left: 15px;
     margin-right: 15px;
     align-items: center;
     width: 330px;
     max-width: 90%;
-    //gap: 50px;
   }
   /*
   &__title__text {
@@ -49,16 +47,12 @@
   }
 
   &__type {
-    /*margin-left: 15px;
-    margin-right: 15px;*/
     padding-bottom: 5px;
   }
 
   &__bar {
     width: 30px;
     border-top: 1px solid #99e2d0ff;
-    /*margin-left: 15px;
-    margin-right: 15px;*/
   }
   &__button {
     margin-top: 40px;

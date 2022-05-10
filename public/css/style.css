@@ -25,11 +25,6 @@ button {
   justify-content: flex-start;
 }
 
-/*
-.margin-topbot {
-  margin-top: 28px;
-  margin-bottom: 28px;
-}*/
 .padding-top {
   padding-top: 28px;
 }
@@ -227,8 +222,6 @@ a:visited {
   min-width: 187px;
   background-image: linear-gradient(170deg, #e972da 0%, #b862db 50%, #a15adb 100%);
   border-radius: 40px 40px 40px 40px;
-  /*padding-top: 20px;
-      padding-bottom: 20px;*/
   display: flex;
   height: 66px;
   align-items: center;
@@ -256,8 +249,6 @@ a:visited {
   height: 65px;
   justify-content: space-between;
   border-radius: 15px 15px 15px 15px;
-  /* margin-left: 15px;
-  margin-right: 15px;*/
   margin-top: 10px;
   margin-bottom: 10px;
   box-shadow: 0 4px 8px 0 #e7e7e7, 0 6px 20px 0 #e7e7e7;
@@ -340,8 +331,6 @@ a:visited {
 }
 
 .coeur__icon-empty, .coeur__icon-full {
-  /*margin-right: 30px;
-  margin-left: 30px;*/
   font-size: 20px;
 }
 .coeur__icon-full {
@@ -447,8 +436,6 @@ a:visited {
 .menu__container-container {
   border-radius: 40px 40px 0px 0px;
   width: 100%;
-  /*width: 400px;
-  max-width: 90%;*/
   position: relative;
   bottom: 30px;
   display: flex;
@@ -472,7 +459,6 @@ a:visited {
   justify-content: space-between;
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: 15px;
   margin-right: 15px;
   align-items: center;
   width: 330px;
@@ -483,15 +469,11 @@ a:visited {
   padding-right: 30px;
 }
 .menu__type {
-  /*margin-left: 15px;
-  margin-right: 15px;*/
   padding-bottom: 5px;
 }
 .menu__bar {
   width: 30px;
   border-top: 1px solid #99e2d0;
-  /*margin-left: 15px;
-  margin-right: 15px;*/
 }
 .menu__button {
   margin-top: 40px;
@@ -686,7 +668,6 @@ a:visited {
   animation: clear 1s linear forwards;
   animation-delay: 2s;
   z-index: 1000;
-  /*background-image: linear-gradient(0deg, black 0%, black 100%);*/
 }
 
 @keyframes rotation {
@@ -697,14 +678,6 @@ a:visited {
     transform: rotate(360deg);
   }
 }
-/*
-.fonction-bloc__number,
-.restaurant__new,
-.loader__footer {
-  opacity: 0;
-  animation: clearreverse 1s linear forwards;
-  animation-delay: 3s;
-}*/
 @keyframes vis {
   0% {
     visibility: visible;
