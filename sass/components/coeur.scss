@@ -1,0 +1,86 @@
+.coeur {
+  &__icon-empty,
+  &__icon-full {
+    /*margin-right: 30px;
+    margin-left: 30px;*/
+    font-size: 20px;
+  }
+
+  &__icon-full {
+    //background: white;
+
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#a15bdcff),
+      to(#e677dbff)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__icon-full__div {
+    display: none;
+  }
+
+  &__icon-hover {
+    cursor: pointer;
+  }
+
+  &__icon-hover:hover &__icon-empty__div {
+    display: none;
+  }
+
+  &__icon-hover:hover &__icon-full__div {
+    display: inline;
+  }
+
+  &__icon-hover:hover > &__icon-full__div > &__icon-full {
+    animation: heartfill 300ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, #a15bdcff),
+      color-stop(100%, #e677dbff)
+    );
+    background-repeat: no-repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes heartfill {
+    0% {
+      background-position: 0px -20px;
+    }
+
+    100% {
+      background-position: 0px 0px;
+    }
+  }
+
+  &__togglable {
+    display: none;
+  }
+
+  &__togglable:checked + &__icon-hover &__icon-full__div {
+    display: inline;
+  }
+
+  &__togglable:checked + &__icon-hover &__icon-empty__div {
+    display: none;
+  }
+
+  &__title__icon {
+    font-size: 25px;
+  }
+
+  &__restaurant {
+    padding-right: 30px;
+  }
+}
