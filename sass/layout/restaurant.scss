@@ -78,5 +78,8 @@
   .restaurant {
     flex-direction: row;
     flex-wrap: wrap;
+    &__title-div {
+      width: auto;
+    }
   }
 }

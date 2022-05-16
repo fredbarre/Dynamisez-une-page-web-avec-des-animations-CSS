@@ -483,6 +483,9 @@ a:visited {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .restaurant__title-div {
+    width: auto;
+  }
 }
 .header {
   display: flex;
