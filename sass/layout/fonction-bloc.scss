@@ -71,5 +71,22 @@
     &__container {
       flex-direction: row;
     }
+    &__title {
+      width: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 932px) {
+  .fonction-bloc {
+    &__container {
+      width: 90%;
+    }
+    &__title {
+      width: auto;
+    }
+    &__span {
+      justify-content: center;
+    }
   }
 }

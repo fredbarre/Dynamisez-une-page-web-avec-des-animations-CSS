@@ -79,3 +79,19 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 933px) {
+  .menu {
+    &__cont3 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    &__block-type {
+      max-width: 45%;
+    }
+  }
+}
