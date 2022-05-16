@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"concurrently npm:sass npm:live-server",
+    "dev":"concurrently npm:sass npm:sass2 npm:live-server",
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "sass2": "sass --watch ./sass/page-menu.scss:./public/css/style-menu.css",
     "live-server": "live-server"
   },
   "repository": {
