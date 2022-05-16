@@ -54,3 +54,11 @@
     object-fit: cover;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .intro {
+    &__blocktext {
+      width: 765px;
+    }
+  }
+}

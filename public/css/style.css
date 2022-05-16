@@ -404,6 +404,11 @@ a:visited {
   object-fit: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .intro__blocktext {
+    width: 765px;
+  }
+}
 .restaurant {
   display: flex;
   justify-content: center;
