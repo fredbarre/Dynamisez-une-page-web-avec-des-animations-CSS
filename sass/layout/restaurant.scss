@@ -11,6 +11,8 @@
     @include shadow;
     margin-top: 14px;
     margin-bottom: 14px;
+    margin-left: 14px;
+    margin-right: 14px;
     width: 336px;
     max-width: 90%;
   }
@@ -69,5 +71,12 @@
 
   &__section {
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
